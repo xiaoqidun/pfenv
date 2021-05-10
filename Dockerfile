@@ -1,5 +1,5 @@
 # 基础镜像
-FROM php:7.4.16-fpm
+FROM php:7.4.19-fpm
 
 # 作者信息
 LABEL MAINTAINER="xiaoqidun@gmail.com"
@@ -8,7 +8,7 @@ LABEL MAINTAINER="xiaoqidun@gmail.com"
 RUN pecl install redis-5.3.4 \
     && docker-php-ext-enable redis
 
-RUN pecl install xdebug-3.0.3 \
+RUN pecl install xdebug-3.0.4 \
     && docker-php-ext-enable xdebug
 
 RUN docker-php-ext-install -j$(nproc) \
