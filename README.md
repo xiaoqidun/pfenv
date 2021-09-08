@@ -5,7 +5,7 @@ php-fpm environment
 
 ## 拉取镜像
 ```
-docker pull xiaoqidun/pfenv:latest
+docker pull hkccr.ccs.tencentyun.com/xiaoqidun/pfenv:latest
 ```
 
 ## docker-compose
@@ -13,7 +13,7 @@ docker pull xiaoqidun/pfenv:latest
 version: '3.8'
 services: 
     php-fpm:
-        image: 'xiaoqidun/pfenv'
+        image: 'hkccr.ccs.tencentyun.com/xiaoqidun/pfenv'
         restart: 'always'
         container_name: 'php-fpm'
         volumes:
