@@ -8,7 +8,8 @@ steps:
     pull: if-not-exists
     image: plugins/docker
     settings:
-      repo: xiaoqidun/pfenv
+      repo: hkccr.ccs.tencentyun.com/xiaoqidun/pfenv
+      registry: hkccr.ccs.tencentyun.com
       username:
         from_secret: docker_username
       password:

@@ -1,5 +1,5 @@
 # 基础镜像
-FROM php:7.4.21-fpm
+FROM php:7.4.23-fpm
 
 # 作者信息
 LABEL MAINTAINER="xiaoqidun@gmail.com"
