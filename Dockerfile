@@ -8,7 +8,7 @@ LABEL MAINTAINER="xiaoqidun@gmail.com"
 RUN pecl install redis-5.3.4 \
     && docker-php-ext-enable redis
 
-RUN pecl install xdebug-3.0.4 \
+RUN pecl install xdebug-3.1.1 \
     && docker-php-ext-enable xdebug
 
 RUN pecl install runkit7-4.0.0a3 \
