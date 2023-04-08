@@ -1,17 +1,17 @@
 # 基础镜像
-FROM php:7.4.24-fpm
+FROM php:8.2.4-fpm
 
 # 作者信息
 LABEL MAINTAINER="xiaoqidun@gmail.com"
 
 # 安装扩展
-RUN pecl install redis-5.3.4 \
+RUN pecl install redis-5.3.7 \
     && docker-php-ext-enable redis
 
-RUN pecl install xdebug-3.1.1 \
+RUN pecl install xdebug-3.2.1 \
     && docker-php-ext-enable xdebug
 
-RUN pecl install runkit7-4.0.0a3 \
+RUN pecl install runkit7-4.0.0a6 \
     && docker-php-ext-enable runkit7
 
 RUN docker-php-ext-install -j$(nproc) \
