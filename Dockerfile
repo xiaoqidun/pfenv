@@ -1,11 +1,11 @@
 # 基础镜像
-FROM php:8.2.15-fpm
+FROM php:8.3.3-fpm
 
 # 作者信息
 LABEL MAINTAINER="xiaoqidun@gmail.com"
 
 # 安装扩展
-RUN pecl install redis-6.0.0 \
+RUN pecl install redis-6.0.2 \
     && docker-php-ext-enable redis
 
 RUN pecl install xdebug-3.3.0alpha2 \
