@@ -2,13 +2,13 @@
 FROM php:8.3.8-fpm
 
 # 作者信息
-LABEL MAINTAINER="xiaoqidun@gmail.com"
+LABEL authors="xiaoqidun"
 
 # 安装扩展
 RUN pecl install redis-6.0.2 \
     && docker-php-ext-enable redis
 
-RUN pecl install xdebug-3.3.1 \
+RUN pecl install xdebug-3.3.2 \
     && docker-php-ext-enable xdebug
 
 RUN pecl install runkit7-4.0.0a6 \
