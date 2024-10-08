@@ -1,5 +1,5 @@
 # 基础镜像
-FROM php:8.3.11-fpm
+FROM php:8.3.12-fpm
 
 # 作者信息
 LABEL authors="xiaoqidun"
