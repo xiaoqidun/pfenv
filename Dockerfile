@@ -1,14 +1,14 @@
 # 基础镜像
-FROM php:8.3.12-fpm
+FROM php:8.3.21-fpm
 
 # 作者信息
 LABEL authors="xiaoqidun"
 
 # 安装扩展
-RUN pecl install redis-6.1.0RC1 \
+RUN pecl install redis-6.2.0 \
     && docker-php-ext-enable redis
 
-RUN pecl install xdebug-3.3.2 \
+RUN pecl install xdebug-3.4.3 \
     && docker-php-ext-enable xdebug
 
 RUN pecl install runkit7-4.0.0a6 \
