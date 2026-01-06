@@ -1,5 +1,5 @@
 # 基础镜像
-FROM php:8.3.28-fpm
+FROM php:8.3.29-fpm
 
 # 作者信息
 LABEL authors="xiaoqidun"
@@ -8,7 +8,7 @@ LABEL authors="xiaoqidun"
 RUN pecl install redis-6.3.0 \
     && docker-php-ext-enable redis
 
-RUN pecl install xdebug-3.4.7 \
+RUN pecl install xdebug-3.5.0 \
     && docker-php-ext-enable xdebug
 
 RUN pecl install runkit7-4.0.0a6 \
