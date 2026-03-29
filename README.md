@@ -13,7 +13,7 @@ docker pull hkccr.ccs.tencentyun.com/xiaoqidun/pfenv:latest
 version: '3.8'
 services: 
     php-fpm:
-        image: 'hkccr.ccs.tencentyun.com/xiaoqidun/pfenv'
+        image: 'hkccr.ccs.tencentyun.com/xiaoqidun/pfenv:latest'
         restart: 'always'
         container_name: 'php-fpm'
         volumes:
